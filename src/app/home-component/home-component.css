@@ -1,0 +1,54 @@
+
+.inicio {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #f7e9e5;
+  }
+  
+  .texto-inicio {
+    max-width: 600px;
+  }
+  
+  .subtitulo {
+    color: #a36d72;
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+  
+  .texto-inicio h2 {
+    font-size: 45px;
+    margin: 20px 0;
+    color: #39332f;
+  }
+  
+  .texto-inicio h2 span {
+    color: #a66e75;
+  }
+  
+  .texto-inicio p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  button {
+    background-color: #a66e75;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .destaques {
+    text-align: center;
+    padding: 60px 10%;
+  }
+  
+  .destaques h2 {
+    color: #9b6b70;
+    margin-bottom: 15px;
+  }
+  

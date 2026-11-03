@@ -1,0 +1,48 @@
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: #fffaf7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .logo h1 {
+    color: #9b6b70;
+    font-size: 23px;
+  }
+  
+  .logo p {
+    color: #81716d;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: #514542;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  nav a:hover {
+    color: #b47780;
+  }
+  
+  @media (max-width: 768px) {
+    .cabecalho {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
