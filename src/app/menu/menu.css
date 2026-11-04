@@ -45,4 +45,10 @@
       justify-content: center;
     }
   }
-  
+
+  nav a.ativo {
+    color: #a66e75;
+    font-weight: bold;
+    border-bottom: 2px solid #a66e75;
+    padding-bottom: 5px;
+  }

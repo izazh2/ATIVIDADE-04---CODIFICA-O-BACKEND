@@ -1,0 +1,39 @@
+<main class="pagina-produtos">
+
+    <section class="titulo">
+      <h2>Nossos Produtos</h2>
+      <p>Confira nossos produtos e encontre o que combina com você.</p>
+    </section>
+  
+    <section class="lista-produtos">
+  
+      @for (produto of produtos; track produto.id) {
+        <article class="card-produto">
+  
+          <div class="imagem-produto">
+            <span>Produto</span>
+          </div>
+  
+          <div class="informacoes-produto">
+            <h3>{{ produto.nome }}</h3>
+  
+            <p>{{ produto.descricao }}</p>
+  
+            <strong>
+              {{ produto.preco | currency:'BRL' }}
+            </strong>
+  
+            <button (click)="adicionarAoCarrinho(produto)">
+                Adicionar ao carrinho 
+                @if (mensagem) {
+                <p class="mensagem">{{ mensagem }}</p>
+              }
+            </button>
+          </div>
+  
+        </article>
+      }
+  
+    </section>
+  
+  </main>
