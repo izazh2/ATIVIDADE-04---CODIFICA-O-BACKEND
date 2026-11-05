@@ -1,0 +1,72 @@
+.pagina-carrinho {
+    padding: 50px 8%;
+    min-height: 500px;
+    background-color: #fffaf7;
+  }
+  
+  .pagina-carrinho h2 {
+    text-align: center;
+    color: #9b6b70;
+    margin-bottom: 35px;
+  }
+  
+  .lista-carrinho {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .item-carrinho h3 {
+    color: #514542;
+    margin-bottom: 8px;
+  }
+  
+  .item-carrinho p {
+    color: #81716d;
+  }
+  
+  .item-carrinho strong {
+    color: #9b6b70;
+    font-size: 18px;
+  }
+  
+  .resumo {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f7e9e5;
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  .resumo strong {
+    display: block;
+    color: #9b6b70;
+    font-size: 22px;
+    margin: 15px 0;
+  }
+  
+  .resumo button {
+    background-color: #a66e75;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .carrinho-vazio {
+    text-align: center;
+    padding: 60px 20px;
+    color: #81716d;
+  }

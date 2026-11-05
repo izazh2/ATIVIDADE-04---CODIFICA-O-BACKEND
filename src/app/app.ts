@@ -3,10 +3,15 @@ import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home-component/home-component';
 import { Menu } from './menu/menu';
 import { ProdutosComponent } from './produtos/produtos';
+import { CarrinhoComponent } from './carrinho/carrinho';
+import { ServicosComponent } from './servicos/servicos';
+import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro';
+import { LoginComponent } from './login/login';
+import { PerfilComponent } from './perfil/perfil';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent, Menu, ProdutosComponent ],
+  imports: [RouterOutlet, HomeComponent, Menu, ProdutosComponent, CarrinhoComponent, ServicosComponent, PessoaCadastroComponent, LoginComponent, PerfilComponent ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

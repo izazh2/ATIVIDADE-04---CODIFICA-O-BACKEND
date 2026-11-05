@@ -1,0 +1,36 @@
+<main class="pagina-servicos">
+
+    <section class="titulo">
+      <h2>Nossos Serviços</h2>
+      <p>Cuide de você com nossos tratamentos e serviços.</p>
+    </section>
+  
+    <section class="lista-servicos">
+  
+      @for (servico of servicos; track servico.id) {
+  
+        <article class="card-servico">
+  
+          <div class="imagem-servico">
+            <span>Serviço</span>
+          </div>
+  
+          <div class="informacoes-servico">
+  
+            <h3>{{ servico.nome }}</h3>
+  
+            <p>{{ servico.descricao }}</p>
+  
+            <strong>
+              {{ servico.preco | currency:'BRL' }}
+            </strong>
+  
+          </div>
+  
+        </article>
+  
+      }
+  
+    </section>
+  
+  </main>
