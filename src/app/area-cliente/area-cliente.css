@@ -1,0 +1,77 @@
+.area-cliente {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .titulo-area {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .titulo-area h1 {
+    color: #9b526b;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .titulo-area p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .opcoes-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .card-area {
+    background-color: #fff;
+    border: 1px solid #ead5dc;
+    border-radius: 12px;
+    padding: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.10);
+  }
+  
+  .card-area h2 {
+    color: #9b526b;
+    font-size: 21px;
+    margin-bottom: 12px;
+  }
+  
+  .card-area p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .voltar-inicio {
+    text-align: center;
+    margin-top: 35px;
+  }
+  
+  .voltar-inicio a {
+    display: inline-block;
+    background-color: #a85d77;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .voltar-inicio a:hover {
+    background-color: #87445d;
+  }
+  
+  @media (max-width: 650px) {
+    .opcoes-area {
+      grid-template-columns: 1fr;
+    }
+  }

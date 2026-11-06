@@ -1,62 +1,79 @@
-.pagina-login {
-    background-color: #fffaf7;
-    min-height: 600px;
-    padding: 70px 20px;
-  }
-  
-  .formulario-login {
-    max-width: 420px;
-    margin: auto;
-    padding: 35px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  }
-  
-  .formulario-login h2 {
-    color: #9b6b70;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .formulario-login p {
-    color: #81716d;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
-  .formulario-login form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .formulario-login label {
-    margin-bottom: 7px;
-    color: #514542;
-  }
-  
-  .formulario-login input {
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-  }
-  
-  .formulario-login button {
-    padding: 13px;
-    border: none;
-    border-radius: 20px;
-    background-color: #a66e75;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .formulario-login button:hover {
-    background-color: #895960;
-  }
-  
-  .cadastro a {
-    color: #a66e75;
-    font-weight: bold;
-    text-decoration: none;
-  }
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 30px 20px;
+  background-color: #fff8f8;
+}
+
+.login-card {
+  background-color: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  color: #9b526b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-card > p {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  color: #493333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login-card input {
+  padding: 12px;
+  border: 1px solid #ead5dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #a85d77;
+}
+
+.login-card button {
+  background-color: #a85d77;
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background-color: #87445d;
+}
+
+.cadastro-link {
+  margin-top: 25px;
+  text-align: center;
+  color: #666;
+}
+
+.cadastro-link a {
+  color: #a85d77;
+  font-weight: bold;
+  text-decoration: none;
+}

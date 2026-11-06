@@ -25,6 +25,10 @@ import { AgendamentoComponent } from './agendamento/agendamento';
 
 import { MeusAgendamentosComponent } from './meus-agendamentos/meus-agendamentos';
 
+import { AcessoPerfil } from './acesso-perfil/acesso-perfil';
+
+import { AreaCliente } from './area-cliente/area-cliente';
+
 export const routes: Routes = [
   {
     path: '',
@@ -58,7 +62,7 @@ export const routes: Routes = [
 
   {
     path: 'perfil',
-    component: PerfilComponent
+    component: AcessoPerfil
   },
 
   {
@@ -84,5 +88,15 @@ export const routes: Routes = [
   {
     path: 'meus-agendamentos',
     component: MeusAgendamentosComponent
-  }
+  },
+
+  {
+    path: 'area-cliente',
+    component: AreaCliente
+  },
+
+  {
+    path: 'meus-dados',
+    component: PerfilComponent
+  },
 ];

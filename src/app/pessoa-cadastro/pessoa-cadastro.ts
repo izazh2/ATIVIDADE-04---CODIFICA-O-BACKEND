@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pessoa-cadastro',
@@ -8,6 +9,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './pessoa-cadastro.css'
 })
 export class PessoaCadastroComponent {
+
+  constructor(private router: Router) {}
 
   cliente = {
     nome: '',
@@ -19,6 +22,8 @@ export class PessoaCadastroComponent {
   cadastrarCliente() {
     console.log('Dados do cliente:', this.cliente);
     alert('Cadastro realizado com sucesso!');
+
+    this.router.navigate(['/area-cliente']);
   }
 
 }

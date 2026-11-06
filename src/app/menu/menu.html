@@ -1,47 +1,26 @@
+<header class="menu">
+  <nav>
+    <a
+      routerLink="/"
+      routerLinkActive="ativo"
+      [routerLinkActiveOptions]="{ exact: true }">
+      Início
+    </a>
 
-<header class="cabecalho">
+    <a routerLink="/produtos" routerLinkActive="ativo">
+      Produtos
+    </a>
 
-    <div class="logo">
-      <h1>Estética & Bem-Estar</h1>
-      <p>Beleza e cuidado em cada detalhe</p>
-    </div>
-  
-    <nav>
-      <a routerLink="/">Início</a>
-      <a routerLink="/produtos">Produtos</a>
-      <a routerLink="/servicos">Serviços</a>
-      <a routerLink="/carrinho">Carrinho</a>
+    <a routerLink="/servicos" routerLinkActive="ativo">
+      Serviços
+    </a>
 
-      <a routerLink="/cadastro" routerLinkActive="ativo">
-        Cadastro
-      </a>
+    <a routerLink="/carrinho" routerLinkActive="ativo">
+      Carrinho
+    </a>
 
-      <a routerLink="/login" routerLinkActive="ativo">
-        Entrar
-      </a>
-      
-      <a routerLink="/perfil" routerLinkActive="ativo">
-        Meu Perfil
-      </a>
-
-      <a routerLink="/historico-pedidos" routerLinkActive="ativo">
-        Meus Pedidos
-      </a>
-
-      <a routerLink="/acompanhamento-pedidos" routerLinkActive="ativo">
-        Acompanhar Pedidos
-      </a>
-
-      <a routerLink="/agendamento" routerLinkActive="ativo">
-        Agendar Serviço
-      </a>
-
-      
-      <a routerLink="/meus-agendamentos" routerLinkActive="ativo">
-         Meus Agendamentos
-      </a>
-
-    </nav>
-  
-  </header>
-  
+    <a routerLink="/perfil" routerLinkActive="ativo">
+      Meu Perfil
+    </a>
+  </nav>
+</header>

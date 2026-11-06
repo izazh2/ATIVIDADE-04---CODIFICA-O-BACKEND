@@ -1,54 +1,31 @@
+.menu {
+  background-color: #fffaf7;
+  padding: 18px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 7%;
-    background-color: #fffaf7;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  }
-  
-  .logo h1 {
-    color: #9b6b70;
-    font-size: 23px;
-  }
-  
-  .logo p {
-    color: #81716d;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  
-  nav {
-    display: flex;
-    gap: 25px;
-  }
-  
-  nav a {
-    color: #514542;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  
-  nav a:hover {
-    color: #b47780;
-  }
-  
-  @media (max-width: 768px) {
-    .cabecalho {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    nav {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+.menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
 
-  nav a.ativo {
-    color: #a66e75;
-    font-weight: bold;
-    border-bottom: 2px solid #a66e75;
-    padding-bottom: 5px;
-  }
+.menu nav a {
+  color: #493333;
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.menu nav a:hover {
+  color: #b76e83;
+}
+
+.menu nav a.ativo {
+  color: #b76e83;
+  font-weight: bold;
+}
