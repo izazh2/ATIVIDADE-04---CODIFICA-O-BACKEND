@@ -1,7 +1,9 @@
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CurrencyPipe } from '@angular/common';
 import { Carrinho } from '../service/carrinho';
+import { Pedido } from '../service/pedido';
 
 @Component({
   selector: 'app-finalizacao-compra',
@@ -24,7 +26,10 @@ export class FinalizacaoCompraComponent {
 
   formaPagamento = '';
 
-  constructor(private carrinho: Carrinho) {
+  constructor(
+    private carrinho: Carrinho,
+    private pedidoService: Pedido
+  ) {
     this.itens = this.carrinho.listarProdutos();
   }
 
@@ -35,11 +40,24 @@ export class FinalizacaoCompraComponent {
   }
 
   finalizarCompra() {
-    console.log('Produtos:', this.itens);
-    console.log('Endereço:', this.endereco);
-    console.log('Pagamento:', this.formaPagamento);
 
-    alert('Pedido enviado com sucesso!');
+    const novoPedido = {
+      id: Date.now(),
+      data: new Date(),
+      produtos: [...this.itens],
+      endereco: { ...this.endereco },
+      formaPagamento: this.formaPagamento,
+      total: this.calcularTotal(),
+      status: 'Aguardando confirmação'
+    };
+
+    this.pedidoService.cadastrarPedido(novoPedido);
+
+    this.carrinho.limparCarrinho();
+
+    alert('Pedido realizado com sucesso!');
+
+    console.log('Pedido registrado:', novoPedido);
   }
 
 }

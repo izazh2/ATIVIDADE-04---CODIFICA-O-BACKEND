@@ -15,4 +15,8 @@ export class Carrinho {
     return this.itens;
   }
 
+  limparCarrinho() {
+    this.itens = [];
+  }
+
 }

@@ -17,6 +17,14 @@ import { PerfilComponent } from './perfil/perfil';
 
 import { FinalizacaoCompraComponent } from './finalizacao-compra/finalizacao-compra';
 
+import { HistoricoPedidosComponent } from './historico-pedidos/historico-pedidos';
+
+import { AcompanhamentoPedidosComponent } from './acompanhamento-pedidos/acompanhamento-pedidos';
+
+import { AgendamentoComponent } from './agendamento/agendamento';
+
+import { MeusAgendamentosComponent } from './meus-agendamentos/meus-agendamentos';
+
 export const routes: Routes = [
   {
     path: '',
@@ -56,5 +64,25 @@ export const routes: Routes = [
   {
     path: 'finalizacao-compra',
     component: FinalizacaoCompraComponent
+  },
+
+  {
+    path: 'historico-pedidos',
+    component: HistoricoPedidosComponent
+  }, 
+
+  {
+    path: 'acompanhamento-pedidos',
+    component: AcompanhamentoPedidosComponent
+  },
+
+  {
+    path: 'agendamento',
+    component: AgendamentoComponent
+  },
+
+  {
+    path: 'meus-agendamentos',
+    component: MeusAgendamentosComponent
   }
 ];

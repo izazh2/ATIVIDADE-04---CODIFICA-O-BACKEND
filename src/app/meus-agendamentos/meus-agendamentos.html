@@ -1,0 +1,56 @@
+
+<section class="pagina-agendamentos">
+
+    <h1>Meus Agendamentos</h1>
+  
+    <p class="descricao">
+      Consulte os serviços que você solicitou.
+    </p>
+  
+    @if (agendamentos.length > 0) {
+  
+      @for (agendamento of agendamentos; track agendamento.id) {
+  
+        <article class="card-agendamento">
+  
+          <h2>{{ agendamento.servico }}</h2>
+  
+          <p>
+            <strong>Data:</strong>
+            {{ agendamento.data }}
+          </p>
+  
+          <p>
+            <strong>Horário:</strong>
+            {{ agendamento.horario }}
+          </p>
+  
+          <p>
+            <strong>Observações:</strong>
+            {{ agendamento.observacoes || 'Nenhuma observação' }}
+          </p>
+  
+          <div class="status-agendamento">
+            <strong>Status:</strong>
+            <span>{{ agendamento.status }}</span>
+          </div>
+  
+        </article>
+  
+      }
+  
+    } @else {
+  
+      <div class="sem-agendamentos">
+        <h2>Nenhum agendamento encontrado</h2>
+  
+        <p>
+          Quando você solicitar um serviço, poderá consultar
+          seu agendamento aqui.
+        </p>
+      </div>
+  
+    }
+  
+  </section>
+  

@@ -1,0 +1,59 @@
+
+<section class="acompanhamento">
+    <h1>Acompanhamento de Pedidos</h1>
+  
+    <p class="descricao">
+      Acompanhe o andamento das suas compras.
+    </p>
+  
+    @if (pedidos.length > 0) {
+  
+      @for (pedido of pedidos; track pedido.id) {
+  
+        <article class="card-pedido">
+  
+          <h2>Pedido #{{ pedido.id }}</h2>
+  
+          <p>
+            <strong>Data:</strong>
+            {{ pedido.data | date:'dd/MM/yyyy HH:mm' }}
+          </p>
+  
+          <p>
+            <strong>Valor total:</strong>
+            {{ pedido.total | currency:'BRL' }}
+          </p>
+  
+          <p>
+            <strong>Forma de pagamento:</strong>
+            {{ pedido.formaPagamento }}
+          </p>
+  
+          <div class="status-pedido">
+            <strong>Status do pedido:</strong>
+            <span>{{ pedido.status }}</span>
+          </div>
+  
+          <h3>Produtos</h3>
+  
+          <ul>
+            @for (produto of pedido.produtos; track produto.id) {
+              <li>{{ produto.nome }}</li>
+            }
+          </ul>
+  
+        </article>
+  
+      }
+  
+    } @else {
+  
+      <div class="sem-pedidos">
+        <h2>Nenhum pedido encontrado</h2>
+        <p>Quando você realizar uma compra, poderá acompanhar o pedido aqui.</p>
+      </div>
+  
+    }
+  
+  </section>
+  
